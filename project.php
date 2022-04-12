@@ -114,8 +114,6 @@
 
     <hr />
 
-    <!-- 영우 html 파트 -->
-
     <!-- 1. Episode를 가장 많이 가진 프로그램 타이틀 출력 -->
     <h2>Display Program title which program have Maximum Episodes</h2>
     <form method="get" action="project.php">
@@ -204,8 +202,6 @@
     </form>
 
     <hr />
-    <!-- 영우 html 파트 끝 -->
-
 
     <!-- PHP 코드 시작 -->
     <?php
@@ -293,7 +289,7 @@
 
         // Your username is ora_(CWL_ID) and the password is a(student number). For example,
         // ora_platypus is the username and a12345678 is the password.
-        $db_conn = OCILogon("ora_jlee52", "a43029743", "dbhost.students.cs.ubc.ca:1522/stu");
+        $db_conn = OCILogon();
 
         if ($db_conn) {
             debugAlertMessage("Database is Connected");
